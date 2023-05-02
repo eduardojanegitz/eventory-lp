@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import Cube from './Cube';
 
 const Section = styled.div`
     height: 100vh;
@@ -65,23 +68,29 @@ const Right = styled.div`
 
 
 const Who = () => {
-    return (
-        <Section>
-            <Container>
-                <Left>
-                </Left>
-                <Right>
-                    <Title>Pense fora da caixa</Title>
-                    <WhatWeDo>
-                        <Line src="./img/line.png" />
-                        <Subtitle>Quem nós somos</Subtitle>
-                    </WhatWeDo>
-                    <Desc>Nós somos um grupo criativo.</Desc>
-                    <Button>Veja nosso trabalho</Button>
-                </Right>
-            </Container>
-        </Section>
-    )
+  return (
+    <Section>
+      <Container>
+        <Left>
+          <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
+            <OrbitControls enableZoom={false} autoRotate/>
+            <ambientLight intensity={1} />
+            <directionalLight position={[3, 2, 1]} />
+            <Cube />
+          </Canvas>
+        </Left>
+        <Right>
+          <Title>Pense fora da caixa</Title>
+          <WhatWeDo>
+            <Line src="./img/line.png" />
+            <Subtitle>Quem nós somos</Subtitle>
+          </WhatWeDo>
+          <Desc>Nós somos um grupo criativo.</Desc>
+          <Button>Veja nosso trabalho</Button>
+        </Right>
+      </Container>
+    </Section>
+  )
 }
 
 export default Who;
