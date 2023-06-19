@@ -21,7 +21,7 @@ const Section = styled.div`
 const Container = styled.div`
   height: 100%;
   scroll-snap-align: center;
-  width: 1000px;
+  width: 1100px;
   display: flex;
   justify-content: center;
 
@@ -52,7 +52,7 @@ const Title = styled.h1`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
-    font-size: 65px;
+    font-size: 55px;
   }
 `;
 
@@ -67,7 +67,7 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #da4ea2;
+  color: #0073cf;
 `;
 
 const Desc = styled.p`
@@ -80,7 +80,7 @@ const Desc = styled.p`
 `;
 
 const Button = styled.button`
-  background-color: #da4ea2;
+  background-color: #0073cf;
   color: #fff;
   font-weight: 500;
   width: 100px;
@@ -119,7 +119,8 @@ const Img = styled.img`
   }
 
   @media only screen and (max-width: 768px) {
-    width: 350px;
+    width: 300px;
+    margin-top: -20px;
   }
 `;
 
@@ -134,25 +135,28 @@ const Hero = () => {
             <TypeWriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Pense.\n")
+                  .typeString("Pense.")
                   .pauseFor(1200)
                   .deleteAll()
-                  .typeString("Analise.\n")
+                  .typeString("Analise.")
                   .pauseFor(1200)
                   .deleteAll()
                   .typeString("Decida.")
+                  .pauseFor(1200)
+                  .deleteAll()
+                  .typeString("EVENTORY.")
                   .start();
               }}
             />
           </Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>O que nós fazemos.</Subtitle>
+            <Subtitle>Controle Patrimonial</Subtitle>
           </WhatWeDo>
           <Desc>
             Controle os ativos de sua empresa de forma simplificada e otimizada.
           </Desc>
-          <Button>Veja mais</Button>
+          {/* <Button>Veja mais</Button> */}
         </Left>
         <Right>
           <Canvas>

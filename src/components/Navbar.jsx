@@ -11,7 +11,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1000px;
+  width: 1100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +62,7 @@ const Icon = styled.img`
 const Button = styled.button`
   width: 155px;
   padding: 10px;
-  background-color: #da4ea2;
+  background-color: #0073cf;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -77,7 +77,6 @@ const Navbar = () => {
           <Logo>EVENTORY.</Logo>
           <List>
             <ListItem>Home</ListItem>
-            <ListItem>Studio</ListItem>
             <ListItem>Trabalho</ListItem>
             <ListItem>Contato</ListItem>
           </List>

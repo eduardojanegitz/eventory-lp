@@ -14,7 +14,7 @@ const Section = styled.div`
 const Container = styled.div`
   height: 100vh;
   scroll-snap-align: center;
-  width: 920px;
+  width: 1100px;
   display: flex;
   justify-content: center;
 `;
@@ -28,10 +28,10 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
+  font-size: 50px;
 
   @media only screen and (max-width: 768px) {
-    font-size: 60px;
+    font-size: 35px;
   }
 `;
 
@@ -46,15 +46,20 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #da4ea2;
+  color: #0073cf;
+  
 `;
 
 const Desc = styled.p`
   font-size: 24px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 const Button = styled.button`
-  background-color: #da4ea2;
+  background-color: #0073cf;
   color: #fff;
   font-weight: 500;
   width: 150px;
@@ -90,13 +95,32 @@ const Who = () => {
           </Canvas>
         </Left>
         <Right>
-          <Title>Pense fora da caixa</Title>
+          <Title>Quem nós somos.</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>Quem nós somos</Subtitle>
+            <Subtitle>Negócio</Subtitle>
           </WhatWeDo>
-          <Desc>Nós somos um grupo criativo.</Desc>
-          <Button>Veja nosso trabalho</Button>
+          <Desc>
+            Soluções em software para a excelência na gestão e conformidade
+            empresarial.
+          </Desc>
+          <WhatWeDo>
+            <Line src="./img/line.png" />
+            <Subtitle>Missão</Subtitle>
+          </WhatWeDo>
+          <Desc>
+            Inovação em software para excelência e conformidade, impulsionando
+            competitividade e sustentabilidade empresarial.
+          </Desc>
+          <WhatWeDo>
+            <Line src="./img/line.png" />
+            <Subtitle>Visão</Subtitle>
+          </WhatWeDo>
+          <Desc>
+            Liderança global em excelência empresarial e conformidade,
+            promovendo integridade e qualidade.
+          </Desc>
+          {/* <Button>Veja nosso trabalho</Button> */}
         </Right>
       </Container>
     </Section>

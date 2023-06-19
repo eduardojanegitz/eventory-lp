@@ -6,10 +6,8 @@ import ProductDesign from "./ProductDesign";
 
 const data = [
   "Efeciência",
-  "Desenvolvimento",
-  "Ilustração",
-  "Product Design",
-  "Social Media",
+  "Automatização",
+  "Rastreabilidade",
 ];
 
 const Section = styled.div`
@@ -109,7 +107,7 @@ const Works = () => {
         <Right>
           {work === "Efeciência" ? (
             <WebDesign />
-          ) : work === "Desenvolvimento" ? (
+          ) : work === "Automatização" ? (
             <Development />
           ) : (
             <ProductDesign />

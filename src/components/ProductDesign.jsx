@@ -1,9 +1,18 @@
-import React from 'react'
+import { OrbitControls, Stage } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import React from "react";
+// import Gears from "./Gears";
+import Map from "./Map";
 
 const ProductDesign = () => {
   return (
-    <div>ProductDesign</div>
-  )
-}
+    <Canvas>
+      <Stage environment="city" intensity={0.01}>
+        <Map />
+      </Stage>
+      <OrbitControls enableZoom={false} />
+    </Canvas>
+  );
+};
 
-export default ProductDesign
+export default ProductDesign;
