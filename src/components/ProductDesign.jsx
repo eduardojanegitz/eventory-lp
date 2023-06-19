@@ -8,7 +8,7 @@ const ProductDesign = () => {
   return (
     <Canvas>
       <Stage environment="city" intensity={0.01}>
-        <Map />
+        {/* <Map /> */}
       </Stage>
       <OrbitControls enableZoom={false} />
     </Canvas>
