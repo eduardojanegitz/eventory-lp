@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('./Computer-transformed.glb')
+  const { nodes, materials } = useGLTF('/Computer-transformed.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Comp_Mouse.geometry} material={materials.lambert3SG} />
