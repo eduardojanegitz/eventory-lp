@@ -8,7 +8,7 @@ const Development = () => {
     <Canvas>
       <Stage environment="city" intensity={0.6}>
 
-      <Gears />
+      {/* <Gears /> */}
       </Stage>
       <OrbitControls enableZoom={false}/>
     </Canvas>

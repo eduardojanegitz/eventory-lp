@@ -124,7 +124,7 @@ const Contact = () => {
         <Right>
           <Canvas>
             <Stage environment="city" intensity={0.6}>
-              <Computer />
+              {/* <Computer /> */}
             </Stage>
             <OrbitControls enableZoom={false} />
           </Canvas>

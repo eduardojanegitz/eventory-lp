@@ -159,10 +159,10 @@ const Hero = () => {
           {/* <Button>Veja mais</Button> */}
         </Left>
         <Right>
-          <Canvas>
+          {/* <Canvas>
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={1} />
-            <directionalLight position={[3, 2, 1]} />
+            <directionalLight position={[3, 2, 1]} /> */}
             {/* <Sphere args={[1, 100, 200]} scale={2.4}>
               <MeshDistortMaterial
                 color="#3d1c56"
@@ -171,7 +171,7 @@ const Hero = () => {
                 speed={2}
               />
             // </Sphere> */}
-          </Canvas>
+          {/* </Canvas> */}
           <Img src="./img/dashboard.svg" />
         </Right>
       </Container>
