@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
-import Map from "./Maps";
+// import Map from "./Maps";
 import emailjs from "@emailjs/browser";
 import { Clock } from "three";
 import WebDesign from "./WebDesign";
 import { OrbitControls, Stage } from "@react-three/drei";
-import Computer from "./Computer"
+// import Computer from "./Computer"
 import { Canvas } from "@react-three/fiber";
 
 const Section = styled.div`
