@@ -122,12 +122,12 @@ const Contact = () => {
           </Form>
         </Left>
         <Right>
-          <Canvas>
-            <Stage environment="city" intensity={0.6}>
+          {/* <Canvas> */}
+            {/* <Stage environment="city" intensity={0.6}> */}
               {/* <Computer /> */}
-            </Stage>
-            <OrbitControls enableZoom={false} />
-          </Canvas>
+            {/* </Stage> */}
+            {/* <OrbitControls enableZoom={false} /> */}
+          {/* </Canvas> */}
         </Right>
       </Container>
     </Section>

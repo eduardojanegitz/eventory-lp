@@ -1,7 +1,7 @@
 import { OrbitControls, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
-import Gears from "./Gears"
+// import Gears from "./Gears"
 
 const Development = () => {
   return (
